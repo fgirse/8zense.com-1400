@@ -8,6 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import { IoSearch } from "react-icons/io5/index.js";
+import  UserButton  from "@/components/UserButton";
 
 //  child navigation link interface
 export interface IChildNavigationLink {
@@ -44,6 +45,7 @@ const Header = () => {
         <div className="order-0">
           <Logo />
         </div>
+        <UserButton/>
         {/* navbar toggler */}
         <input id="nav-toggle" type="checkbox" className="hidden" />
         <label
