@@ -83,7 +83,7 @@ const Home = () => {
             )}
           </div>
           <div className="relative -top-6 w-36 h-36 mx-auto flex flex-col items-center">
-              <Image src="/images/LogoEZ.png" alt="Logo" width="250" height="250" className="shadow-2xl shadow-gray-100 rounded-xl" />
+              <Image src="/images/a_logo for a company with a.mp4" alt="Logo" width="250" height="250" className="shadow-2xl shadow-gray-100 rounded-xl" />
 
           </div>
 
