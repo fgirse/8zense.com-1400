@@ -7,18 +7,18 @@ import { RegularPage } from "@/types";
 const Contact = async () => {
   const data: RegularPage = getListPage("contact/_index.md");
   const { frontmatter } = data;
-  const { title_1, title_2, title_3,  description, meta_title, image } = frontmatter;
+  const { title, title_2, title_3,  description, meta_title, image } = frontmatter;
   const { contact_form_action } = config.params;
 
   return (
     <>
       <SeoMeta
-        title={title_1}
+        title={title}
         meta_title={meta_title}
         description={description}
         image={image}
       />
-      <PageHeader title={title_1} />
+      <PageHeader title={title} />
       <section className="section-sm">
         <div className="container">
           <div className="row">

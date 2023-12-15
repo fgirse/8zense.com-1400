@@ -1,7 +1,7 @@
 ---
 # Banner
 banner:
-  title_1: "Timeless"
+  title: "Timeless"
   title_2: "Design"
   content: "the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together!"
   index_1: "Carl"

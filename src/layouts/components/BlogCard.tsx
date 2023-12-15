@@ -8,20 +8,20 @@ import { FaRegFolder, FaRegUserCircle } from "react-icons/fa/index.js";
 
 const BlogCard = ({ data }: { data: Post }) => {
   const { summary_length, blog_folder } = config.settings;
-  const { title_1, image, author, categories, date } = data.frontmatter;
+  const { title, image, author, categories, date } = data.frontmatter;
   return (
     <div className="bg-body dark:bg-darkmode-body">
       {image && (
         <ImageFallback
           className="mb-6 w-full rounded"
           src={image}
-          alt={title_1}
+          alt={title}
           width={445}
           height={230}
         />
       )}
       <h4 className="mb-3">
-        <Link href={`/${blog_folder}/${data.slug}`}>{title_1}</Link>
+        <Link href={`/${blog_folder}/${data.slug}`}>{title}</Link>
       </h4>
       <ul className="mb-4">
         <li className="mr-4 inline-block">

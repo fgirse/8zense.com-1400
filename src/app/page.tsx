@@ -18,7 +18,7 @@ const Home = () => {
     banner,
     features,
   }: {
-    banner: { title_1: string; title_2: string; title_3: string; index_1: string; index_2: string; image: string; content?: string; button?: Button };
+    banner: { title: string; title_2: string; title_3: string; index_1: string; index_2: string; image: string; content?: string; button?: Button };
     features: Feature[];
   } = frontmatter;
 
@@ -34,7 +34,7 @@ const Home = () => {
     <div className="col-span-6 row-span-2">
     <h1
                 className="inline-block text-transparent bg-clip-text text-left mb-0 text-4xl uppercase bg-gradient-to-b from-yellow-500 via-amber-500 to-slate-600"
-                dangerouslySetInnerHTML={markdownify(banner.title_1)}
+                dangerouslySetInnerHTML={markdownify(banner.title)}
               />
     </div>
     <div className="col-span-6 row-span-3 col-start-1 row-start-3">
@@ -83,7 +83,7 @@ const Home = () => {
             )}
           </div>
           <div className="relative -top-6 w-36 h-36 mx-auto flex flex-col items-center">
-              <Image src="/images/a_logo for a company with a.mp4" alt="Logo" width="250" height="250" className="shadow-2xl shadow-gray-100 rounded-xl" />
+              <Image src="/images/LogoEZ.png" alt="Logo" width="250" height="250" className="shadow-2xl shadow-gray-100 rounded-xl" />
 
           </div>
 

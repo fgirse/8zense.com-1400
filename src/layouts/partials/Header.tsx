@@ -8,7 +8,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect } from "react";
 import { IoSearch } from "react-icons/io5/index.js";
-import  UserButton  from "@/components/UserButton";
+import UserBtm from "@/components/UserButton";
 
 //  child navigation link interface
 export interface IChildNavigationLink {
@@ -38,19 +38,19 @@ const Header = () => {
 
   return (
     <header
-      className={`header z-30 bg-gradient-to-b from-gray-900 to-slate-600  ${settings.sticky_header && "sticky top-0"}`}
+      className={`header z-30 bg-gradient-to-b from-gray-600 to-blue-500/20  ${settings.sticky_header && "sticky top-0"}`}
     >
       <nav className="navbar container">
         {/* logo */}
-        <div className="order-0">
+        <div className="order-0 flex gap-x-5 items-center">
           <Logo />
+          <UserBtm/>
         </div>
-        <UserButton/>
         {/* navbar toggler */}
         <input id="nav-toggle" type="checkbox" className="hidden" />
         <label
           htmlFor="nav-toggle"
-          className="order-3 cursor-pointer flex items-center lg:hidden text-dark dark:text-white lg:order-1"
+          className="order-3 cursor-pointer flex items-center lg:hidden text-white dark:text-white lg:order-1"
         >
           <svg
             id="show-button"

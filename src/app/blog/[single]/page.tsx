@@ -39,7 +39,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
 
   const { frontmatter, content } = post;
   const {
-    title_1,
+    title,
     meta_title,
     description,
     image,
@@ -53,7 +53,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
   return (
     <>
       <SeoMeta
-        title={title_1}
+        title={title}
         meta_title={meta_title}
         description={description}
         image={image}
@@ -68,13 +68,13 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                     src={image}
                     height={500}
                     width={1200}
-                    alt={title_1}
+                    alt={title}
                     className="w-full rounded"
                   />
                 </div>
               )}
               <h1
-                dangerouslySetInnerHTML={markdownify(title_1)}
+                dangerouslySetInnerHTML={markdownify(title)}
                 className="h2 mb-4"
               />
               <ul className="mb-4">
@@ -126,7 +126,7 @@ const PostSingle = ({ params }: { params: { single: string } }) => {
                   <h5 className="mr-3">Share :</h5>
                   <Share
                     className="social-icons"
-                    title={title_1}
+                    title={title}
                     description={description}
                     slug={post.slug!}
                   />
