@@ -1,7 +1,7 @@
 "use client";
 
 import { useOrganization, useSession, useUser } from "@clerk/nextjs";
-import classNames from "classNames";
+import classNames from "classnames";
 import { useEffect, useState } from "react";
 import { CopyIcon, Dot } from "../icons";
 import Image from "next/image";
