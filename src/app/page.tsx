@@ -8,6 +8,7 @@ import Testimonials from "@/partials/Testimonials";
 import { Button, Feature } from "@/types";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa/index.js";
+import AnimationLogo from "@/components/AnimationLogo"
 
 const Home = () => {
   const homepage = getListPage("homepage/_index.md");
@@ -25,35 +26,35 @@ const Home = () => {
   return (
     <>
       <SeoMeta />
-      <section className="bg-gradient-to-b from-gray-900 via-slate-900 to-slate-400">
-        <div className="container">
+      <section className="w-full bg-gradient-to-b from-gray-900 via-slate-900 to-slate-400">
+        <div className="">
           <div className="row justify-center">
-            <div className="mb-16 lg:col-7">
+            <div className="mb-16">
 
-<div className="py-2 grid grid-cols-10 grid-rows-5 gap-4">
-    <div className="col-span-6 row-span-2">
+<div className="py-3 grid  lg:grid-cols-[5vw repeat(10, 1fr) 5vw] lg:grid-rows-6-[16%,18%,24%, 6%, 24%,10%] gap-x-1                                                                                                                                                                                                                                      -20 gap-4 lg:w-[100vw] lg:h-screen lg:grid-cols-[5vw repeat(10, 1fr) 5vw] lg:grid-rows-[10vh, 20vh, 30vh, ]">
+    <div className="lg:col-start-1 lg:col-span-7 lg;row-start-1 lg:row-end-2 ">
     <h1
-                className="inline-block text-transparent bg-clip-text text-left mb-0 text-4xl uppercase bg-gradient-to-b from-yellow-500 via-amber-500 to-slate-600"
+                className="inline-block text-transparent bg-clip-text text-4xl uppercase bg-gradient-to-b from-yellow-500 via-amber-500 to-slate-600 lg:py-10 lg:text-[7rem] lg:col-start-0 col-span-8"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
               />
     </div>
-    <div className="col-span-6 row-span-3 col-start-1 row-start-3">
+    <div className="col-span-8 row-span-1 col-start-1 row-start-2">
     <h1
-                className={"relative -top-14  text-[5rem] inline-block text-transparent bg-clip-text text-left mb-0 uppercase bg-gradient-to-b from-yellow-500 via-orange-300  to-slate-600"}
+                className={"relative -top-36 text-[5rem] inline-block text-transparent bg-clip-text uppercase bg-gradient-to-b from-yellow-500 via-orange-300  to-slate-600 lg:text-[14rem]"}
                 dangerouslySetInnerHTML={markdownify(banner.title_2)}
               />
     </div>
-    <div className="col-span-4 row-span-5 col-start-9 row-start-1"> <p
-                className="py-2  text-right text-[.60rem] text-slate-200"
+    <div className="col-span-4 row-span-5 col-start-10 row-start-1"> <p
+                className="py-2  text-right text-[.60rem] text-slate-200 lg:text-3xl lg:w-4/12"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               />
-              <div className="relative left-16 py-1 flex flex-col bg-orange-400 rounded-full w-8 h-8 leading-0">
+              <div className="relative left-16 lg:left-[40vw]  py-1 flex flex-col bg-orange-400 rounded-full w-8 h-8 leading-0 lg:w-28 lg:h-28 lg:py-5 ">
               <h1
-                className="text-[.50rem] inline-block text-transparent bg-clip-text text-center mb-0  uppercase bg-gradient-to-b from-gray-50  via-white to-slate-600"
+                className="text-[.50rem] inline-block text-transparent bg-clip-text text-center mb-0  uppercase bg-gradient-to-b from-gray-50  via-white to-slate-600 lg:text-3xl "
                 dangerouslySetInnerHTML={markdownify(banner.index_1)}
               />
               <h1
-                className=" text-[.50rem] relative inline-block text-transparent bg-clip-text text-center uppercase bg-gradient-to-b from-gray-50  via-white to-slate-600"
+                className=" text-[.50rem] relative inline-block text-transparent bg-clip-text text-center uppercase bg-gradient-to-b from-gray-50  via-white to-slate-600 lg:text-3xl"
                 dangerouslySetInnerHTML={markdownify(banner.index_2)}
               />
               </div>
@@ -70,7 +71,7 @@ const Home = () => {
               )}
             </div>
             {banner.image && (
-              <div className="col-12">
+              <div className="col-start-5 col-span-full collg:bg-[url('/images/sideboardobg.png')] bg-cover bg-no-repeat ">
                 <ImageFallback
                   src={banner.image}
                   className="mx-auto"
@@ -82,8 +83,10 @@ const Home = () => {
               </div>
             )}
           </div>
-          <div className="relative -top-6 w-36 h-36 mx-auto flex flex-col items-center">
-              <Image src="/images/LogoEZ.png" alt="Logo" width="250" height="250" className="shadow-2xl shadow-gray-100 rounded-xl" />
+          <div className="">
+          <video autoPlay loop>
+    <source src="/images/animationsLogo.mp4" type="video/mp4" />
+</video>
 
           </div>
 
