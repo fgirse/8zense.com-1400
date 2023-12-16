@@ -84,6 +84,7 @@ const Home = () => {
             )}
           </div>
           <div className="">
+            
           <video autoPlay loop>
     <source src="/images/animationsLogo.mp4" type="video/mp4" />
 </video>
