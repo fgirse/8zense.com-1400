@@ -31,7 +31,7 @@ const Home = () => {
           <div className="row justify-center">
             <div className="mb-16">
 
-<div className="py-3 grid  lg:grid-cols-[5vw repeat(10, 1fr) 5vw] lg:grid-rows-6-[16%,18%,24%, 6%, 24%,10%] gap-x-1                                                                                                                                                                                                                                      -20 gap-4 lg:w-[100vw] lg:h-screen lg:grid-cols-[5vw repeat(10, 1fr) 5vw] lg:grid-rows-[10vh, 20vh, 30vh, ]">
+<div className="py-3 grid  lg:grid-cols-[100px , 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr,  100px] lg:grid-rows-[16%,18%,24%,6%, 24%, 10%] gap-x-1  ">
     <div className="lg:col-start-1 lg:col-span-7 lg;row-start-1 lg:row-end-2 ">
     <h1
                 className="inline-block text-transparent bg-clip-text text-4xl uppercase bg-gradient-to-b from-yellow-500 via-amber-500 to-slate-600 lg:py-10 lg:text-[7rem] lg:col-start-0 col-span-8"

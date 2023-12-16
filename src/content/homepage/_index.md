@@ -3,7 +3,7 @@
 banner:
   title: "Timeless"
   title_2: "Design"
-  content: "the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together!"
+  content: "&laquo; the beauty of a living thing is not the atoms that go into it -but the way those atoms are put together!&raquo;"
   index_1: "Carl"
   index_2: "Sagen"
   image: "/images/sideboardobg.png"
