@@ -27,28 +27,28 @@ const Home = () => {
     <>
       <SeoMeta />
       <section className="w-full bg-gradient-to-b from-gray-900 via-slate-900 to-slate-400">
-        <div className="">
-          <div className="row justify-center">
-            <div className="mb-16">
+        <div className="z-40 bg-[url('/images/gitter2.png') bg-contain h-screen w-full" >
+          
+            <div className="">
 
-<div className="py-3 grid  lg:grid-cols-[100px , 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr,  100px] lg:grid-rows-[16%,18%,24%,6%, 24%, 10%] gap-x-1  ">
-    <div className="lg:col-start-1 lg:col-span-7 lg;row-start-1 lg:row-end-2 ">
+<div className="py-3 grid  lg:grid-cols-[100px , 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr,  100px] lg:grid-rows-[16%,18%,10%,6%, 24%, 10%] gap-x-1  ">
+    <div className="lg:col-start-2 lg:col-span-6 lg;row-start-1 lg:row-end-2 ">
     <h1
                 className="inline-block text-transparent bg-clip-text text-4xl uppercase bg-gradient-to-b from-yellow-500 via-amber-500 to-slate-600 lg:py-10 lg:text-[7rem] lg:col-start-0 col-span-8"
                 dangerouslySetInnerHTML={markdownify(banner.title)}
               />
     </div>
-    <div className="col-span-8 row-span-1 col-start-1 row-start-2">
+    <div className="lg:col-start-2 lg:col-end-8 lg:row-start-2 lg:row-end-3">
     <h1
-                className={"relative -top-36 text-[5rem] inline-block text-transparent bg-clip-text uppercase bg-gradient-to-b from-yellow-500 via-orange-300  to-slate-600 lg:text-[14rem]"}
+                className={"relative -top-9 text-[5rem] inline-block text-transparent bg-clip-text uppercase bg-gradient-to-b from-yellow-500 via-orange-300  to-slate-600 lg:text-[14rem]"}
                 dangerouslySetInnerHTML={markdownify(banner.title_2)}
               />
     </div>
-    <div className="col-span-4 row-span-5 col-start-10 row-start-1"> <p
-                className="py-2  text-right text-[.60rem] text-slate-200 lg:text-3xl lg:w-4/12"
+    <div className="lg:col-start-2 lg:row-end-3 lg:row-start-1 bg-red-600 h-10 w-full"> <p
+                className="py-2  text-right text-[.60rem] text-slate-200 lg:text-3xl lg:py-3 lg:w-4/12"
                 dangerouslySetInnerHTML={markdownify(banner.content ?? "")}
               />
-              <div className="relative left-16 lg:left-[40vw]  py-1 flex flex-col bg-orange-400 rounded-full w-8 h-8 leading-0 lg:w-28 lg:h-28 lg:py-5 ">
+              <div className="relative left-16 lg:left-[40vw]  py-2 flex flex-col bg-orange-400 rounded-full w-8 h-8 leading-0 lg:w-28 lg:h-28 lg:py-5 ">
               <h1
                 className="text-[.50rem] inline-block text-transparent bg-clip-text text-center mb-0  uppercase bg-gradient-to-b from-gray-50  via-white to-slate-600 lg:text-3xl "
                 dangerouslySetInnerHTML={markdownify(banner.index_1)}
@@ -63,7 +63,7 @@ const Home = () => {
     
            
              
-             
+             <div className="lg:relative  lg:left-[52vw]">                                                                                                                                                                                 "
               {banner.button!.enable && (
                 <Link className="btn btn-primary" href={banner.button!.link}>
                   {banner.button!.label}

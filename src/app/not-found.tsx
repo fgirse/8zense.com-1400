@@ -19,7 +19,7 @@ const NotFound = async () => {
                   name changed, or is temporarily unavailable.
                 </p>
               </div>
-              <Link href="/" className="btn btn-primary mt-8">
+              <Link href="/home" className="btn btn-primary mt-8">
                 Back to home
               </Link>
             </div>
