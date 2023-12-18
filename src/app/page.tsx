@@ -63,7 +63,7 @@ const Home = () => {
     
            
              
-             <div className="lg:relative  lg:left-[52vw]">                                                                                                                                                                                 "
+             <div className="lg:relative  lg:left-[52vw]">                                                                                                                                                                                 
               {banner.button!.enable && (
                 <Link className="btn btn-primary" href={banner.button!.link}>
                   {banner.button!.label}
